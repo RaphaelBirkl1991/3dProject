@@ -39,14 +39,30 @@ const Phone = () => {
       groundColor='black'
       />
 
+{/* Light to the backside of the 3d Model */}
       <directionalLight
       position={[0, 0, -1]}
       intensity={0.2}
       />
+
+        <directionalLight
+      position={[1.5, 0, -3]}
+      intensity={0.13}
+      /> 
+
+<directionalLight
+      position={[-1.5, 0, -3]}
+      intensity={0.13}
+      /> 
+
+{/* Light to the frontside of the 3d Model  */}
          <directionalLight
       position={[0, 0, 1]}
       intensity={0.2}
       />
+
+
+
       {/* <hemisphereLight
       
        intensity={5}
